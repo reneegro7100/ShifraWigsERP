@@ -20,17 +20,25 @@
       <!-- The sidebar -->
   <div class="sidebar">
   <a  href=products.html>Enter new product</a>
-  <a  href="productSearch.html">Search for product</a>
-  <a  href="productView.html">View All Products</a>
+  <a class="active" href="productSearch.html">Search for product</a>
+  <a href="productView.html">View All Products</a>
   <a href="Inventory.html">Inventory</a>
-  <a class="active" href="Repairs.html">Repairs</a>
+  <a href="Repairs.html">Repairs</a>
   </div>
 
 
 
 <!-- Page content -->
   <div class="content">
-Repairs
+    <h1>Product Search </h1>
+    <!-- Load icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- The form -->
+    <form class="example" action="action_page.php">
+        <input type="text" placeholder="Serial Number." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
   </div>
 </body>
 </html>
